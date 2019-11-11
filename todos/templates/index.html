@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+  <div class="row d-flex justify-content-between">
+    <h1 class="m-5">Your Todos</h1>
+    <a class="btn btn-primary btn-lg m-5" href="/todos/new/" role="button">New</a>
+  </div>
+
+  <table class="table">
+
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Due Date</th>
+        <th scope="col">Buttons</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for todo in todos %}
+        <tr>
+          <th scope="row">{{todo.id}}</th>
+          <td>{{todo.title}}</td>
+          <td>{{todo.due_date}}</td>
+          <td>
+            <a class="btn btn-primary" href="/todos/{{todo.id}}/detail/" role="button">Show more</a>
+            <a class="btn btn-warning" href="/todos/{{todo.id}}/edit/" role="button">Edit</a>
+            <a class="btn btn-danger" href="/todos/{{todo.id}}/delete/" role="button">Delete</a>
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+    
+  </table>
+
+{% endblock %}
