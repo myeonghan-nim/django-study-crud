@@ -1,6 +1,6 @@
-# reCRUD with Django
+# README
 
-### rePractice CRUD logic
+## repractice CRUD logic
 
 ```python
 def create(request):
