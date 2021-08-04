@@ -1,23 +1,16 @@
 {% extends 'base.html' %}
 
 {% block body %}
-
-  <h1 class="m-5">Complete your todo</h1>
-
+  <h1 class="m-5">NEW</h1>
   <form action="/todos/create/" class="m-5">
-
     <div class="form-group">
       <label for="title">Title</label>
       <input type="text" class="form-control" id="title" name="title" placeholder="Enter title">
     </div>
-
     <div class="form-group">
       <label for="duedate">Due Date</label>
       <input type="date" class="form-control" id="duedate" name="duedate">
     </div>
-
     <button type="submit" class="btn btn-primary">Submit</button>
-    
   </form>
-
 {% endblock %}

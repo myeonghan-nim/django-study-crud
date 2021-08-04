@@ -1,14 +1,11 @@
 {% extends 'base.html' %}
 
 {% block body %}
-
   <div class="row d-flex justify-content-between">
-    <h1 class="m-5">Your Todos</h1>
+    <h1 class="m-5">TO-DOs</h1>
     <a class="btn btn-primary btn-lg m-5" href="/todos/new/" role="button">New</a>
   </div>
-
   <table class="table">
-
     <thead class="thead-dark">
       <tr>
         <th scope="col">#</th>
@@ -17,7 +14,6 @@
         <th scope="col">Buttons</th>
       </tr>
     </thead>
-
     <tbody>
       {% for todo in todos %}
         <tr>
@@ -32,7 +28,5 @@
         </tr>
       {% endfor %}
     </tbody>
-    
   </table>
-
 {% endblock %}
