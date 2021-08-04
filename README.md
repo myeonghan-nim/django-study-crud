@@ -1,6 +1,6 @@
-# README
+# reCRUD
 
-## repractice CRUD logic
+## CRUD
 
 ```python
 def create(request):
