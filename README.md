@@ -1,4 +1,4 @@
-# Study: be professional in django
+# Study: CRUD
 
 ## CRUD
 
